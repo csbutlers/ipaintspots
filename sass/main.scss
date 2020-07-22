@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 @mixin clearfix {
     &::after {
         content: "";
@@ -471,34 +479,4 @@ li {
 }
 
 
-
-//media quiries
-
-@media only screen and (min-width : 320px) and (max-width : 680px) {
-    .header {
-     align-items: flex-end;  
-     padding-bottom: 4rem;
-    }
-    
-    .header__text-box {
-         font-family: 'Poppins', sans-serif;    
-         color: white;
-         width: 100%;
-         text-align: center;
-         text-transform: uppercase;
-         font-size: 3rem;
-    }    
-
-    .testimony__row {
-    text-align: center;   
-    flex-direction: column;
-    } 
-    
-    .testimony__boxes {
-        width: 90%;
-        margin: 1rem auto;
-    }
-
-
-
-}
+@import "mobile";
