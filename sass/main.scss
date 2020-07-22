@@ -1,0 +1,504 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+//colors vars
+$color-primary: #ffff;
+$color-primary-blue: #3498DB;
+$color-primary-green: #1ABC9C;
+$color-primary-dark: #232323;
+$color-primary-dark-grey: #303030;
+$color-primary-light-grey: #eeeeee;
+
+
+//global reset
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; 
+  font-family: 'Open Sans', sans-serif;
+  border: 2rem solid $color-primary-light-grey;
+  background-color: $color-primary-light-grey;
+  
+}
+
+h2 {
+    font-family: 'Merriweather', serif; 
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+/*
+
+font-family: 'Arvo', serif;
+
+
+font-family: 'Merriweather', serif;
+font-family: 'Neuton', serif;
+
+
+
+*/
+
+.header {
+     background-image: linear-gradient(to right bottom, rgba($color-primary-blue, 0.5), rgba($color-primary-blue, 0.7)), url(../img/hero-bg.jpg);
+     background-size: cover;
+     background-position: center;
+     height: 50rem;
+     display: flex;
+     align-items: center;
+     align-content: center;
+     justify-content: flex-start;
+
+     &__title {
+         font-family: 'Merriweather', serif;
+         letter-spacing: 10px; 
+         font-size: 5rem;
+       
+
+         .title__sub-text {
+           font-family: 'Open Sans', sans-serif;
+           letter-spacing: 2px;
+           display: block;
+             font-size: 2.5rem;
+             text-transform: none;
+             margin-bottom: 2rem;
+         }
+     }
+
+
+
+     &__text-box {
+            
+         color: white;
+         width: 50%;
+         text-align: left;
+         margin-left: 3rem;
+         text-transform: uppercase;
+         
+        
+     }
+      
+
+}
+
+
+
+.hero {
+     background-image: linear-gradient(to right, rgba($color-primary-green, 0.6), rgba($color-primary-green, 0.9)), url(../img/goat-large.jpg);
+     background-size: cover;
+     background-position: top;
+     height: 60rem;
+     display: flex;
+     align-items: center;
+     align-content: center;
+     justify-content: flex-end;
+
+     &__title {
+         font-family: 'Merriweather', serif;
+         letter-spacing: 10px; 
+         font-size: 5rem;
+       
+
+         .title__sub-text {
+           font-family: 'Open Sans', sans-serif;
+           letter-spacing: 2px;
+           display: block;
+             font-size: 2.5rem;
+             text-transform: none;
+             margin-bottom: 2rem;
+         }
+     }
+
+
+
+     &__text-box {
+            
+         color: white;
+         width: 50%;
+         text-align: left;
+         margin-left: 3rem;
+         text-transform: uppercase;
+         
+        
+     }
+      
+
+}
+
+
+
+
+
+
+
+
+.testimony {
+    padding: 2rem;
+    margin: 2rem auto;
+        
+    &__header-text {
+        
+        font-size: 3.5rem;
+        color: $color-primary-green;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    }
+    &__title {
+    text-transform: uppercase;
+    font-size: 1.75rem!important;
+    
+    }
+    &__text {
+        font-size: 1.5rem;
+    }
+
+    &__caption {
+       font-size: 1.5rem;
+       color: #888;
+       font-style: italic;
+   }
+
+}
+
+   .testimony__boxes {
+       align-self: flex-start;
+       width: 30%;
+       height: 30rem;
+       background-color: $color-primary-light-grey;
+       text-align: center;
+       margin: 1rem 2rem;
+       padding: 1rem;
+       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+       border-radius: 4px;
+           
+   
+       .testimony_img {
+       width: 150px;
+       height: auto;
+       border-radius: 50%;
+       margin-bottom: 1rem;
+       }  
+
+
+}
+
+.hero {
+    padding: 1rem 0 0;
+    
+}
+
+.hero__hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 2000px;
+}    
+
+
+.process {
+    margin: 2rem auto;
+    padding: 2rem;
+    width: 100%;
+  
+    
+}
+    
+    .process__text {
+       width: 80%;
+       margin: 0 auto;
+       
+       
+}
+   
+     
+
+
+
+
+.process__holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 2rem;
+}
+
+.process__holder img {
+        text-align: center;
+        display: inline-block;
+        max-width: 100%;
+        width: 350px;
+        padding: 1rem;
+   
+}
+
+
+.centerul li:before {
+    content: ' ✔ ';   
+    margin-left: -1em;
+}
+
+.centerul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.centerul ul{
+   
+   font-size: 2rem; 
+   padding-left:30px;
+   text-indent:2px;
+   list-style: none;
+   list-style-position:outside;
+   display: block;
+   width: 80%;
+
+}
+
+li {
+    padding: .5rem;
+}
+
+
+
+.btn {
+    &, &:link, &:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1.2rem 3rem;
+      display: inline-block;
+      border-radius: 7rem;
+      transition: all .2s;
+      position: relative;
+      font-size: 1.8rem;
+      border: none;
+      cursor: pointer;
+      margin-top: 1rem;
+      color: $color-primary-green;
+}
+
+&:hover  {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-primary-dark, .2); 
+    &::after {
+    transform: scaleX(1.4) scaleY(1.7);
+    opacity: 0;
+
+}
+}
+
+&:active, &:focus {
+    outline:none;
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba($color-primary-dark, .2); 
+}
+
+&--white {
+    background-color: $color-primary;
+    color: #fff;
+    &::after {
+    background-color: $color-primary;
+}
+
+
+}
+
+
+&--green {
+    background-color: $color-primary-green;
+    color: #777;
+    &::after {
+    background-color: $color-primary;
+}
+
+
+}
+
+
+
+}
+
+//to center that damn call to action button
+
+.calltoaction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+
+//bottom call to action styles
+
+.btn-bottom {
+    &, &:link, &:visited {
+      
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1.2rem 3rem;
+      display: inline-block;
+      
+      border-radius: 7rem;
+      transition: all .2s;
+      position: relative;
+      font-size: 1.8rem;
+      border: none;
+      cursor: pointer;
+      margin: 2rem auto;
+      color: $color-primary;
+}
+
+&:hover  {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-primary-dark, .2); 
+    &::after {
+    transform: scaleX(1.4) scaleY(1.7);
+    opacity: 0;
+
+}
+}
+
+&:active, &:focus {
+    outline:none;
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba($color-primary-dark, .2); 
+}
+
+&--white {
+    background-color: $color-primary;
+    color: #777;
+    &::after {
+    background-color: $color-primary;
+}
+
+
+}
+
+
+&--green {
+    background-color: $color-primary-green;
+    color: #777;
+    &::after {
+    background-color: $color-primary;
+}
+
+}
+}
+
+
+
+.footer {
+    
+    
+     background-color: $color-primary-dark-grey;
+     padding: 2rem;
+     width: 100%;
+     margin: 0 auto;
+     
+   
+
+
+     &__column {
+         width: 50%;
+         color: $color-primary;
+         margin: 1rem auto;
+         
+         padding: 0;
+     }
+
+     &__connect {
+         font-size: 2rem;
+         text-align: center;
+         color: $color-primary-green;
+     }
+     &__list {
+         text-align: center;
+         list-style-type: none;
+         font-size: 1.25rem;
+         line-height: 1.25rem;
+     }
+     
+
+}
+
+
+
+
+.footer-links {
+    &, &:link, &:visited {
+       color: white;
+       transition: all 1s;
+    } 
+    
+    &:hover {
+        color: $color-primary-green;
+        text-decoration: none;
+        transform: translateY(-2px);
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+}
+
+
+
+//media quiries
+
+@media only screen and (min-width : 320px) and (max-width : 680px) {
+    .header {
+     align-items: flex-end;  
+     padding-bottom: 4rem;
+    }
+    
+    .header__text-box {
+         font-family: 'Poppins', sans-serif;    
+         color: white;
+         width: 100%;
+         text-align: center;
+         text-transform: uppercase;
+         font-size: 3rem;
+    }    
+
+    .testimony__row {
+    text-align: center;   
+    flex-direction: column;
+    } 
+    
+    .testimony__boxes {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+
+
+}
