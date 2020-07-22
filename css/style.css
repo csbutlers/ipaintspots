@@ -13,8 +13,7 @@ body {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   border: 2rem solid #eeeeee;
-  background-color: #eeeeee;
-  color: #232323; }
+  background-color: #eeeeee; }
 
 h2 {
   font-family: 'Merriweather', serif;
@@ -276,12 +275,25 @@ li {
     padding: 0; }
   .footer__connect {
     font-size: 2rem;
-    text-align: center; }
+    text-align: center;
+    color: #1ABC9C; }
   .footer__list {
     text-align: center;
     list-style-type: none;
     font-size: 1.25rem;
     line-height: 1.25rem; }
+
+.footer-links, .footer-links:link, .footer-links:visited {
+  color: white;
+  transition: all 1s; }
+
+.footer-links:hover {
+  color: #1ABC9C;
+  text-decoration: none;
+  transform: translateY(-2px); }
+
+.footer-links:focus {
+  outline: none; }
 
 @media only screen and (min-width: 320px) and (max-width: 680px) {
   .header {
