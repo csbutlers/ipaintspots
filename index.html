@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-24155518-15"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-24155518-15');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mary Butler creates custom dog portraits.">
@@ -14,12 +24,19 @@
     <meta name="twitter:title" content="I Paint Spots, creating lasting portraits of your pet" />
     <meta name="twitter:description" content="Mary Butler creates custom dog portraits." />
     <meta name="twitter:image" content="https://ipaintspots/img/hero-img-med.jpg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Baloo+2:wght@800&family=Baloo+Da+2:wght@800&family=Merriweather:wght@700;900&family=Neuton:wght@800&family=Open+Sans&family=Passion+One&family=Ultra&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>I Paint Spots</title>
+
+    
+    <link rel="stylesheet" href="css/style.css?v8">
+    
+    <title>I paint Spots, and dogs, cats, goats, geckos...</title>
 </head>
 
 <body>
@@ -27,9 +44,7 @@
     <header class="header">
         <div class="header__text-box">
             <h1 class="header__title">
-                <span>I paint Spots</span>
-                <!--<span class="title__sub-text">Creating lasting portraits of your pets</span>-->
-                <span class="title__sub-text">Dogs, cats, horses, goats, geckos......</span>
+                <span>I paint Spots, and dogs, cats, goats, geckos...</span>
             </h1>
             <a href="https://www.blackjackstudio.com/dogs-2" class="btn btn--white">Learn More</a>
         </div>
@@ -40,19 +55,21 @@
         <section class="process">
             <div class="process__holder">
                 <div>
-                    <img src="img/photo-before.jpg" alt="A customers picture of their pet." class="hero__hero-imgs">
+                    <img src="img/photo-after-2.jpg" alt="A pet portrait by Mary Butler" class="hero__hero-imgs">
                 </div>
                 <div>
-                    <img src="img/photo-after.jpg" alt="A pet portrait by Mary Butler" class="hero__hero-imgs">
+                    <img src="img/photo-before-2.jpg" alt="A customers picture of their pet." class="hero__hero-imgs">
                 </div>
+              
+
             </div>
             <div class="process__text">
-                <h2 class="testimony__header-text">From your Pet to masterpiece</h2>
+                <h2 class="testimony__header-text">From photo to masterpiece</h2>
                 <div class="centerul">
                     <ul>
-                        <li>Transform a photo into a custom piece of art that will last forever</li>
-                        <li>Use professional acrylic paint and stretched canvas</li>
-                        <li>Sizes range from 6″ x 6″ to 20″ x 20″.</li>
+                        <li>Transform an ordinary photo into a custom piece of art work</li>
+                        <li>Use of professional acrylic paint and stretched canvas</li>
+                        <li>Sizes ranging from 8″ x 8″ to 20″ x 20″ (larger sizes available)</li>
                         <li>Cost from $150 - $300</li>
                     </ul>
                 </div>
@@ -63,9 +80,8 @@
         <section class="hero">
             <div class="hero__text-box">
                 <div class="hero__title">
-                    <p class="title__sub-text">You know what's better than fancy artwork for your home? Custom digital
-                        pet portraits!
-                    </p>
+                    <h3 class="title__sub-text">What would be better than boring wall art? A custom portrait of your fur baby!
+                    </h3>
                 </div>
                 <a href="https://www.blackjackstudio.com/dogs-2" class="btn btn--white">Learn More</a>
             </div>
@@ -74,7 +90,7 @@
         </section>
         <!-- testimonial section -->
         <section class="testimony">
-            <h2 class="testimony__header-text">What they are saying</h2>
+            <h2 class="testimony__header-text">What our Customers say</h2>
             <div class="testimony__row">
                 <div class="testimony__boxes">
                     <img src="img/forrest.jpg" alt="a portrait of Forrest" class="testimony_img">
@@ -82,33 +98,34 @@
                         Forest
                     </h3>
                     <p class="testimony__text">"It's perfect. Thank you!"</p>
-                    <figcaption class="testimony__caption">
+                    <span class="testimony__caption">
                         - Mariah G.
-                    </figcaption>
+                    </span>
                 </div>
+
+                <div class="testimony__boxes">
+                    <img src="img/cashhole.jpg" alt="a goat image" class="testimony_img">
+                    <h3 class="testimony__title">
+                        Cashhole
+                    </h3>
+                    <p class="testimony__text">"Happiness is going to the post office and finding art! Thank You".
+                    </p>
+                    <span class="testimony__caption">
+                        - Monroe B.
+                    </span>
+                </div>
+
                 <div class="testimony__boxes">
                     <img src="img/sullivan.jpg" alt="a portrait of Sullivan" class="testimony_img">
                     <h3 class="testimony__title">
                         Sullivan
                     </h3>
                     <p class="testimony__text">"Oh my goodness your portraits made our day. They are GORGEOUS!".</p>
-                    <figcaption class="testimony__caption">
+                    <span class="testimony__caption">
                         - Mary S.
-                    </figcaption>
+                    </span>
                 </div>
-                <div class="testimony__boxes">
-                    <img src="img/dogTH003.jpg" alt="a dog image" class="testimony_img">
-                    <h3 class="testimony__title">
-                        Winofred
-                    </h3>
-                    <p class="testimony__text">"I was so sad when she passed, but this painint just brings back such
-                        great
-                        memories".
-                    </p>
-                    <figcaption class="testimony__caption">
-                        - Monroe B.
-                    </figcaption>
-                </div>
+                
             </div>
             <div class="calltoaction">
                 <a href="https://www.blackjackstudio.com/dogs-2" class="btn-bottom btn--green">Learn More</a>
@@ -119,18 +136,18 @@
     <footer class="footer">
         <div class="footer__column">
             <h4 class="footer__connect">
-                Connect with Us
+                Connect
             </h4>
             <ul class="footer__list">
                 <li class="footer__item"><a href="https://www.blackjackstudio.com" class="footer-links">
                     BlackJackStudio</a></li>
                 <li class="footer__item"><a href="https://www.ipaintspots.com" class="footer-links">IpaintSpots</a></li>
-                <li class="footer__item"><a href="https://www.blackjackstudio.com" class="footer-links">Etsy</a></li>
-                <li class="footer__item"><a href="https://www.blackjackstudio.com" class="footer-links">Facebook</a></li>
-                <li class="footer__item"><a href="https://www.blackjackstudio.com" class="footer-links">Instagram</a></li></li>
+                <!-- <li class="footer__item"><a href="https://www.etsy.com" class="footer-links">Etsy</a></li> -->
+                <li class="footer__item"><a href="https://www.facebook.com/mary.butler.549668" class="footer-links">Facebook</a></li>
+                <li class="footer__item"><a href="https://www.instagram.com/ipaintspots" class="footer-links">Instagram</a></li>
             </ul>
         </div>
-        </div>
+        
     </footer>
 </body>
 

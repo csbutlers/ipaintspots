@@ -7,16 +7,15 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  box-sizing: border-box; }
 
 body {
-  box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-  border: 2rem solid #eeeeee;
   background-color: #eeeeee; }
 
 h2 {
-  font-family: 'Merriweather', serif;
+  font-family: 'poppins', serif;
   letter-spacing: 2px;
   margin-bottom: 2rem; }
 
@@ -32,18 +31,19 @@ font-family: 'Neuton', serif;
 
 */
 .header {
-  background-image: linear-gradient(to right bottom, rgba(52, 152, 219, 0.5), rgba(52, 152, 219, 0.7)), url(../img/hero-bg.jpg);
+  background-image: linear-gradient(to right bottom, rgba(52, 152, 219, 0.5), rgba(52, 152, 219, 0.7)), url(../img/hero-bg-2.jpg);
   background-size: cover;
   background-position: center;
-  height: 50rem;
+  height: 55rem;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: flex-start; }
   .header__title {
-    font-family: 'Merriweather', serif;
-    letter-spacing: 10px;
-    font-size: 5rem; }
+    font-family: 'Poppins', serif;
+    letter-spacing: 5px;
+    font-size: 4rem;
+    line-height: 4.25rem; }
     .header__title .title__sub-text {
       font-family: 'Open Sans', sans-serif;
       letter-spacing: 2px;
@@ -68,14 +68,15 @@ font-family: 'Neuton', serif;
   align-content: center;
   justify-content: flex-end; }
   .hero__title {
-    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', serif;
     letter-spacing: 10px;
     font-size: 5rem; }
     .hero__title .title__sub-text {
+      text-transform: uppercase !important;
       font-family: 'Open Sans', sans-serif;
       letter-spacing: 2px;
       display: block;
-      font-size: 2.5rem;
+      font-size: 2.75rem;
       text-transform: none;
       margin-bottom: 2rem; }
   .hero__text-box {
@@ -98,7 +99,9 @@ font-family: 'Neuton', serif;
     justify-content: center;
     align-items: center;
     align-content: center;
-    flex-direction: row; }
+    flex-direction: row;
+    max-width: 969px;
+    margin: 0px auto; }
   .testimony__title {
     text-transform: uppercase;
     font-size: 1.75rem !important; }
@@ -110,14 +113,11 @@ font-family: 'Neuton', serif;
     font-style: italic; }
 
 .testimony__boxes {
-  align-self: flex-start;
-  width: 30%;
+  width: 33.3333333333%;
   height: 30rem;
-  background-color: #eeeeee;
   text-align: center;
   margin: 1rem 2rem;
   padding: 1rem;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   border-radius: 4px; }
   .testimony__boxes .testimony_img {
     width: 150px;
@@ -175,8 +175,7 @@ font-family: 'Neuton', serif;
   text-indent: 2px;
   list-style: none;
   list-style-position: outside;
-  display: block;
-  width: 80%; }
+  display: block; }
 
 li {
   padding: .5rem; }
@@ -226,6 +225,7 @@ li {
   align-content: center; }
 
 .btn-bottom, .btn-bottom:link, .btn-bottom:visited {
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.2rem 3rem;
@@ -274,6 +274,7 @@ li {
     margin: 1rem auto;
     padding: 0; }
   .footer__connect {
+    text-transform: uppercase;
     font-size: 2rem;
     text-align: center;
     color: #1ABC9C; }
@@ -295,12 +296,16 @@ li {
 .footer-links:focus {
   outline: none; }
 
-@media only screen and (min-width: 320px) and (max-width: 680px) {
+@media only screen and (min-width: 220px) and (max-width: 680px) {
   .header {
+    background-image: linear-gradient(to right bottom, rgba(52, 152, 219, 0.5), rgba(52, 152, 219, 0.7)), url(../img/hero-bg-med-2.jpg);
     align-items: flex-end;
     padding-bottom: 4rem; }
+  .header__title {
+    letter-spacing: 5px;
+    font-size: 3rem;
+    line-height: 4rem; }
   .header__text-box {
-    font-family: 'Poppins', sans-serif;
     color: white;
     width: 100%;
     text-align: center;
@@ -311,4 +316,28 @@ li {
     flex-direction: column; }
   .testimony__boxes {
     width: 90%;
-    margin: 1rem auto; } }
+    margin: 1rem auto; }
+  .testimony {
+    padding: 2rem;
+    margin: 2rem auto; }
+    .testimony__header-text {
+      font-size: 2.75rem;
+      color: #1ABC9C;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 3rem; }
+  .hero {
+    background-image: linear-gradient(to right, rgba(26, 188, 156, 0.6), rgba(26, 188, 156, 0.9)), url(../img/goat-large.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 60rem; }
+    .hero__text-box {
+      margin: 0 auto;
+      text-align: center;
+      width: 70%; }
+    .hero .title__sub-text {
+      font-family: 'Open Sans', sans-serif;
+      letter-spacing: 2px;
+      display: block;
+      font-size: 2.75rem;
+      margin-bottom: 2rem; } }
